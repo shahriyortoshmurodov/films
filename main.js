@@ -64,7 +64,7 @@ const movies = [
     language: "English",
     ytid: "JA03ciYt-Ek"
   },
-  
+
   {
     "Title": "The Death of Stalin",
     "fulltitle": "The Death of Stalin (2017)",
@@ -196,7 +196,7 @@ const movies = [
     "language": "English",
     "ytid": "5rgO_TyyOoU"
   },
-  
+
   {
     "Title": "Your Name",
     "fulltitle": "Your Name (2016)",
@@ -262,10 +262,75 @@ const movies = [
     "language": "English",
     "ytid": "83UoZcdX__Y"
   },
+  {
+    "Title": "Confessions of a Brazilian Call Girl",
+    "fulltitle": "Confessions of a Brazilian Call Girl (2011)",
+    "movie_year": 2011,
+    "Categories": "Biography|Drama",
+    "summary": "Raquel is a girl, adopted by an upper middle class family, who rebelled at 17 and left her family and studies at a traditional college in São Paulo to become a call girl. Shortly after starting work, she decided to write a blog about her experiences. Since some clients thought she looked like a surfer she adopted the name \"Surfistinha\" which means little surfer girl. This blog became a sensation, and quickly became one of the most popular blogs in Brazil. Becoming famous, her life changed significantly. She went on to be interviewed on Brazilian talk shows similar to Oprah and David Letterman, all the while continuing her blog about her racy exploits. She wrote a book about these experiences: \"O Doce Veneno Do Escorpião\".",
+    "ImageURL": "https://www.pngitem.com/pimgs/m/501-5012588_deadpool-png-transparent-png.png",
+    "imdb_id": "tt1587828",
+    "imdb_rating": 6.1,
+    "runtime": 109,
+    "language": "English",
+    "ytid": "6Yjgquu8FoU"
+  },
+  {
+    "Title": "Book Club",
+    "fulltitle": "Book Club (2018)",
+    "movie_year": 2018,
+    "Categories": "Comedy|Drama|Romance",
+    "summary": "Four lifelong friends have their lives forever changed after reading 50 Shades of Grey in their monthly book club.",
+    "ImageURL": "https://www.pngitem.com/pimgs/m/501-5012588_deadpool-png-transparent-png.png",
+    "imdb_id": "tt6857166",
+    "imdb_rating": 6.2,
+    "runtime": 104,
+    "language": "English",
+    "ytid": "LDxgPIsv6sY"
+  },
+  {
+    "Title": "Tag",
+    "fulltitle": "Tag (2018)",
+    "movie_year": 2018,
+    "Categories": "Comedy",
+    "summary": "A small group of former classmates organize an elaborate, annual game of tag that requires some to travel all over the country.",
+    "ImageURL": "https://www.pngitem.com/pimgs/m/501-5012588_deadpool-png-transparent-png.png",
+    "imdb_id": "tt2854926",
+    "imdb_rating": 6.8,
+    "runtime": 100,
+    "language": "English",
+    "ytid": "kjC1zmZo30U"
+  },
+  {
+    "Title": "The Princess Diaries",
+    "fulltitle": "The Princess Diaries (2001)",
+    "movie_year": 2001,
+    "Categories": "Comedy|Family|Romance",
+    "summary": "Mia Thermopolis is the average teenager - sweet, a little geeky and pretty much invisible to everyone with the exception of her mother, best friend Lilly and Lilly's older brother Michael. Making it through high school without throwing up is a challenge in itself for Mia, so it doesn't come as welcome news when her estranged grandmother shows up out of the blue and calmly informs her that she is in fact the heir to the throne of a European country called Genovia. Suddenly Mia's life is thrown into complete overload. She's being taught about scarves, waves and pears in order to become a perfect princess, she gets a makeover and a tough looking yet sweet bodyguard/limo driver called Joe. Things get out of hand when the media gets a hold of the story and suddenly Mia is thrust into the spotlight in both the newspapers and in school. On top of all that Mia has a choice to make. She must decide by Genovia's Independence Day Ball whether she longs to relinquish her claim on the throne or to...",
+    "ImageURL": "https://www.pngitem.com/pimgs/m/501-5012588_deadpool-png-transparent-png.png",
+    "imdb_id": "tt0247638",
+    "imdb_rating": 6.3,
+    "runtime": 111,
+    "language": "English",
+    "ytid": "2CkcwPi20ms"
+  },
+  {
+    "Title": "March of the Penguins",
+    "fulltitle": "March of the Penguins (2005)",
+    "movie_year": 2005,
+    "Categories": "Documentary|Family",
+    "summary": "At the end of each Antarctic summer, the emperor penguins of the South Pole journey to their traditional breeding grounds in a fascinating mating ritual that is captured in this documentary by intrepid filmmaker Luc Jacquet. The journey across frozen tundra proves to be the simplest part of the ritual, as after the egg is hatched, the female must delicately transfer it to the male and make her way back to the distant sea to nourish herself and bring back food to her newborn chick.",
+    "ImageURL": "https://www.pngitem.com/pimgs/m/501-5012588_deadpool-png-transparent-png.png",
+    "imdb_id": "tt0428803",
+    "imdb_rating": 7.6,
+    "runtime": 80,
+    "language": "English",
+    "ytid": "JZWt5YkhVp8"
+  },
 
-    
-  
-  
+
+
+
 ];
 
 const cardsContainer = document.getElementById("cardsContainer");
@@ -289,8 +354,8 @@ function renderMovies(movies) {
         <h2>${movie.Title}</h2>
         <p>${movie.movie_year} • ${movie.runtime} min</p>
         <p>${movie.Categories}</p>
-        <p>Rating: ${movie.imdb_rating}</p>
-        <button onclick="window.open('https://www.imdb.com/title/${movie.imdb_id}', '_blank')">More Info</button>
+        <p>Rating:⭐ ${movie.imdb_rating}</p>
+        <button onclick="window.open('https://www.netflix.com/uz/${movie.imdb_id}', '_blank')">More Info</button>
       </div>
     `;
     cardsContainer.appendChild(card);

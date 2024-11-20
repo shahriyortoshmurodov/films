@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movie Search</title>
+  <title>Movies website</title>
+  <link class=""  rel="website icon" type="jpg" href="OIP.jpg">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
 
 
-  <img class="logo" src="MOVIES! (1).svg" alt="img">
 
-  <div class="search-bar">
+  <img class="movielogo" src="movi.svg" alt="img">
+
+  <div class="search">
     <input type="text" id="searchInput" placeholder="Enter your movie name">
     <select id="typeFilter">
-      <option value="all">All Types</option>
+      <option value="all">All Types ✔️</option>
       <option value="Action">Action</option>
       <option value="Comedy">Comedy</option>
       <option value="Animation">Animation</option>
@@ -23,7 +26,7 @@
       <option value="Documentary">Documentary</option>
     </select>
     <select id="sortFilter">
-      <option value="default">Sort</option>
+      <option value="default">Sort 🗓️</option>
       <option value="title-asc">Title (A-Z)</option>
       <option value="title-desc">Title (Z-A)</option>
       <option value="rating-asc">Rating (Low-High)</option>
@@ -31,11 +34,12 @@
       <option value="year-asc">Year (Old-New)</option>
       <option value="year-desc">Year (New-Old)</option>
     </select>
-    <button class="search-btn" id="searchMovies">Search</button>
+    <button class="search-btn" id="searchMovies">Search 🔎</button>
   </div>
 
   <div id="cardsContainer" class="cards-container"></div>
-  
+
   <script src="main.js"></script>
 </body>
+
 </html>
